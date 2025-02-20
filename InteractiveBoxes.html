@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expandable Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Interactive.css" />
+  </head>
+  <body class="bg-white flex justify-center items-center min-h-screen">
+    <div class="w-full max-w-md p-4">
+      <div class="flex items-center justify-between mb-4">
+        <div class="text-white px-2 py-1 rounded-full text-xs"></div>
+        <div class="relative">
+          <div
+            class="absolute top-0 right-0 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center"
+          ></div>
+        </div>
+      </div>
+      <h1 class="text-center text-pink-500 text-xl font-bold mb-4">
+        YAY! It's BOGO
+      </h1>
+
+      <!-- First Card -->
+      <div class="card border-2 border-blue-500 p-4 mb-4 relative">
+        <div
+          class="absolute top-0 right-0 text-white text-xs px-2 py-1 rounded-full"
+        ></div>
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center">
+            <input class="mr-2" id="unit2" name="unit" type="radio" />
+            <label class="text-sm" for="unit2">1 Unit</label>
+          </div>
+          <div class="text-white text-xs px-2 py-1 rounded-full"></div>
+        </div>
+        <div class="additional-content">
+          <div class="grid grid-cols-2 gap-2 mb-2">
+            <div>
+              <label class="block text-xs text-gray-500" for="size1"
+                >Size</label
+              >
+              <select class="w-full border rounded p-1 text-sm" id="size1">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs text-gray-500" for="color1"
+                >Colour</label
+              >
+              <select class="w-full border rounded p-1 text-sm" id="color1">
+                <option>Black</option>
+                <option>White</option>
+                <option>Red</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs text-gray-500" for="size2"
+                >Size</label
+              >
+              <select class="w-full border rounded p-1 text-sm" id="size2">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs text-gray-500" for="color2"
+                >Colour</label
+              >
+              <select class="w-full border rounded p-1 text-sm" id="color2">
+                <option>Colour</option>
+                <option>Black</option>
+                <option>White</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="text-right">
+          <p class="text-lg font-bold">$18.00 USD</p>
+          <p class="text-gray-400 line-through">$24.00 USD</p>
+        </div>
+      </div>
+
+      <!-- Second Card -->
+      <div class="card border-2 border-blue-500 p-4 mb-4 relative">
+        <div
+          class="absolute top-0 right-0 bg-red-500 text-white text-xs px-2 py-1 rounded-full"
+        >
+          MOST POPULAR
+        </div>
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center">
+            <input class="mr-2" id="unit2" name="unit" type="radio" />
+            <label class="text-sm" for="unit2">2 Unit</label>
+          </div>
+          <div class="bg-red-500 text-white text-xs px-2 py-1 rounded-full">
+            20% Off
+          </div>
+        </div>
+        <div class="additional-content">
+          <div class="grid grid-cols-2 gap-2 mb-2">
+            <div>
+              <label class="block text-xs text-gray-500" for="size1"
+                >Size</label
+              >
+              <select class="w-full border rounded p-1 text-sm" id="size1">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs text-gray-500" for="color1"
+                >Colour</label
+              >
+              <select class="w-full border rounded p-1 text-sm" id="color1">
+                <option>Black</option>
+                <option>White</option>
+                <option>Red</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs text-gray-500" for="size2"
+                >Size</label
+              >
+              <select class="w-full border rounded p-1 text-sm" id="size2">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs text-gray-500" for="color2"
+                >Colour</label
+              >
+              <select class="w-full border rounded p-1 text-sm" id="color2">
+                <option>Colour</option>
+                <option>Black</option>
+                <option>White</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="text-right">
+          <p class="text-lg font-bold">$18.00 USD</p>
+          <p class="text-gray-400 line-through">$24.00 USD</p>
+        </div>
+      </div>
+
+      <!-- Third Card -->
+      <div class="card border-2 border-blue-500 p-4 mb-4 relative">
+        <div
+          class="absolute top-0 right-0 text-white text-xs px-2 py-1 rounded-full"
+        ></div>
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center">
+            <input class="mr-2" id="unit2" name="unit" type="radio" />
+            <label class="text-sm" for="unit2">3 Unit</label>
+          </div>
+          <div class="text-white text-xs px-2 py-1 rounded-full"></div>
+        </div>
+        <div class="additional-content">
+          <div class="grid grid-cols-2 gap-2 mb-2">
+            <div>
+              <label class="block text-xs text-gray-500" for="size1"
+                >Size</label
+              >
+              <select class="w-full border rounded p-1 text-sm" id="size1">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs text-gray-500" for="color1"
+                >Colour</label
+              >
+              <select class="w-full border rounded p-1 text-sm" id="color1">
+                <option>Black</option>
+                <option>White</option>
+                <option>Red</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs text-gray-500" for="size2"
+                >Size</label
+              >
+              <select class="w-full border rounded p-1 text-sm" id="size2">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs text-gray-500" for="color2"
+                >Colour</label
+              >
+              <select class="w-full border rounded p-1 text-sm" id="color2">
+                <option>Colour</option>
+                <option>Black</option>
+                <option>White</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="text-right">
+          <p class="text-lg font-bold">$18.00 USD</p>
+          <p class="text-gray-400 line-through">$24.00 USD</p>
+        </div>
+      </div>
+
+      <p class="text-red-500 text-sm mb-2">Free Delivery</p>
+      <p class="text-right text-lg font-bold mb-4">Total : $18.00 USD</p>
+      <button
+        class="w-full bg-pink-500 text-white py-2 rounded-full text-lg font-bold mb-4"
+      >
+        + Add to Cart
+      </button>
+      <p class="text-center text-gray-400 text-xs">© Powered by Pumper</p>
+    </div>
+
+    <script src="./Interactive.js"></script>
+  </body>
+</html>
